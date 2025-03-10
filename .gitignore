@@ -13,6 +13,6 @@ dist/
 .wrangler
 
 # IDE
-.vscode/*
 !.vscode/extensions.json
 .idea
+config.bat
