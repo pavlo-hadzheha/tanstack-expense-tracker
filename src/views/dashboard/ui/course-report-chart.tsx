@@ -1,9 +1,8 @@
 'use client'
 
-import { cn } from '@/shared/lib/utils';
-import { RadialBarChart } from '@mantine/charts';
-import { Paper, Select } from '@mantine/core';
-import { useState } from 'react';
+import { cn } from '@/shared/lib/utils'
+import { RadialBarChart } from '@mantine/charts'
+import { Paper, Select } from '@mantine/core'
 
 export default function CourceReportChart({ className }: { className?: string }) {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
@@ -12,28 +11,28 @@ export default function CourceReportChart({ className }: { className?: string })
     {
       name: 'Not started',
       value: 159,
-      color: 'primary.2'
+      color: 'primary.2',
     },
     {
       name: 'In Progress',
       value: 5,
-      color: 'primary.4'
+      color: 'primary.4',
     },
     {
       name: 'Completed',
       value: 0,
-      color: 'primary'
+      color: 'primary',
     },
-  ];
+  ]
 
   return (
     <Paper withBorder className={cn(className, 'relative')}>
-      <div className='ml-3 mb-10 flex justify-between'>
+      <div className="ml-3 mb-10 flex justify-between">
         <div>Cource report</div>
         <Select
-          value={selectedCategory} 
+          value={selectedCategory}
           onChange={setSelectedCategory}
-          placeholder='Pick course'
+          placeholder="Pick course"
           data={['Biology', 'Meth']}
         />
       </div>
@@ -43,10 +42,10 @@ export default function CourceReportChart({ className }: { className?: string })
         dataKey="value"
         endAngle={-180}
         h={350}
-        emptyBackgroundColor='gray.0'
+        emptyBackgroundColor="gray.0"
         barSize={24}
         radialBarChartProps={{ innerRadius: '50%' }}
       />
     </Paper>
-  );
+  )
 }
