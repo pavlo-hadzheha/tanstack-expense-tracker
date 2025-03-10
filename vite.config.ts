@@ -4,6 +4,8 @@ import { TanStackRouterVite } from '@tanstack/router-plugin/vite'
 import tsconfigpaths from 'vite-tsconfig-paths'
 import tailwindcss from '@tailwindcss/vite'
 import eslint from 'vite-plugin-eslint'
+import autoImportsConfig from './src/core/config/auto-import/auto-imports.config.mjs'
+import { AppIconsPlugin } from './src/core/config/auto-import/icons.resolver.mjs'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -12,6 +14,8 @@ export default defineConfig({
     react(),
     tsconfigpaths(),
     tailwindcss(),
-    eslint()
+    eslint(),
+    autoImportsConfig(),
+    AppIconsPlugin({ dir: './public/icons' }),
   ],
 })

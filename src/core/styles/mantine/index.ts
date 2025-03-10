@@ -1,10 +1,5 @@
-import {
-  createTheme,
-  rem,
-  DEFAULT_THEME,
-  MantineThemeOverride,
-} from "@mantine/core";
-import { colors } from "./colors";
+import { createTheme, rem, DEFAULT_THEME, MantineThemeOverride } from '@mantine/core'
+import { colors } from './colors'
 
 export const theme: MantineThemeOverride = createTheme({
   fontSizes: {
@@ -15,11 +10,11 @@ export const theme: MantineThemeOverride = createTheme({
     xl: rem(30),
   },
   radius: {
-    xs: "4px",
-    sm: "5px",
-    md: "6px",
-    lg: "10px",
-    xl: "30px",
+    xs: '4px',
+    sm: '5px',
+    md: '6px',
+    lg: '10px',
+    xl: '30px',
   },
   spacing: {
     xs: rem(10),
@@ -29,10 +24,10 @@ export const theme: MantineThemeOverride = createTheme({
     xl: rem(32),
   },
   fontFamily: `${DEFAULT_THEME.fontFamily}`,
-  fontFamilyMonospace: "Monaco, Courier, monospace",
+  fontFamilyMonospace: 'Monaco, Courier, monospace',
   headings: {
     fontFamily: `${DEFAULT_THEME.fontFamily}`,
-    fontWeight: "600",
+    fontWeight: '600',
     sizes: {
       h1: {
         fontSize: rem(25),
@@ -45,15 +40,15 @@ export const theme: MantineThemeOverride = createTheme({
       },
     },
   },
-  black: "#0E0F11",
+  black: '#0E0F11',
   scale: 1.6,
-  defaultRadius: "md",
-  cursorType: "pointer",
+  defaultRadius: 'md',
+  cursorType: 'pointer',
   fontSmoothing: true,
-  focusRing: "auto",
-  primaryColor: "primary",
+  focusRing: 'auto',
+  primaryColor: 'primary',
   primaryShade: 7,
   ...colors,
-});
+})
 
-export default theme;
+export default theme

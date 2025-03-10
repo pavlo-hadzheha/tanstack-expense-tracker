@@ -1,8 +1,8 @@
-"use client";
+'use client'
 
-import { Button, Container, Group, Menu } from "@mantine/core";
-import { CaretDown } from "@phosphor-icons/react";
-import { Link } from "@tanstack/react-router";
+import { Button, Container, Group, Menu } from '@mantine/core'
+import { CaretDown } from '@phosphor-icons/react'
+import { Link } from '@tanstack/react-router'
 
 function AppHeader() {
   return (
@@ -15,21 +15,12 @@ function AppHeader() {
         <div className="text-4xl ml-8 font-bold">QA IR</div>
         <div className="mx-auto" />
         <Group>
-          <Button
-            component={Link}
-            href="/"
-            className="text-md"
-            variant="transparent"
-          >
+          <Button component={Link} href="/" className="text-md" variant="transparent">
             Home
           </Button>
           <Menu>
             <Menu.Target>
-              <Button
-                variant="transparent"
-                className="text-md"
-                rightSection={<CaretDown size={16} />}
-              >
+              <Button variant="transparent" className="text-md" rightSection={<CaretDown size={16} />}>
                 Shop
               </Button>
             </Menu.Target>
@@ -42,11 +33,7 @@ function AppHeader() {
           </Menu>
           <Menu>
             <Menu.Target>
-              <Button
-                variant="transparent"
-                className="text-md"
-                rightSection={<CaretDown size={16} />}
-              >
+              <Button variant="transparent" className="text-md" rightSection={<CaretDown size={16} />}>
                 My Account
               </Button>
             </Menu.Target>
@@ -60,6 +47,6 @@ function AppHeader() {
         </Group>
       </Container>
     </>
-  );
+  )
 }
-export { AppHeader };
+export { AppHeader }
