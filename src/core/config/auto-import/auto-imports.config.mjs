@@ -1,5 +1,5 @@
 import { AppIconsResolver } from './icons.resolver.mjs'
-import AutoImport from 'unplugin-auto-import/webpack'
+import AutoImport from 'unplugin-auto-import/vite'
 
 export default () =>
   AutoImport({
@@ -16,7 +16,7 @@ export default () =>
           'redirect',
           'notFound',
           'permanentRedirect',
-          'useRouter'
+          'useRouter',
         ],
         'next/image': [['default', 'NextImage']],
         'next/link': [['default', 'NextLink']],

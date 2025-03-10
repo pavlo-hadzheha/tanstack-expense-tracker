@@ -4,16 +4,16 @@ export const colors: MantineThemeColorsOverride = {
   colors: {
     ...DEFAULT_THEME.colors,
     primary: [
-      "#FAFBFE",
-      "#cce4ff",
-      "#9bc6ff",
-      "#65a6fe",
-      "#388afc",
-      "#1b79fc",
-      "#0271fd",
-      "#005fe2",
-      "#0055cb",
-      "#0049b4"
+      '#FAFBFE',
+      '#cce4ff',
+      '#9bc6ff',
+      '#65a6fe',
+      '#388afc',
+      '#1b79fc',
+      '#0271fd',
+      '#005fe2',
+      '#0055cb',
+      '#0049b4',
     ],
     yellow: [
       '#FFF6E1', // 50
@@ -52,16 +52,16 @@ export const colors: MantineThemeColorsOverride = {
       '#9B0919', // 900
     ],
     gray: [
-      "#f1f3f5",
-      "#f0f4ff",
-      "#e4e7ee",
-      "#c9ccd3",
-      "#9497a0",
-      "#858892",
-      "#7c808d",
-      "#6a6e7b",
-      "#5d626f",
-      "#4e5465"
+      '#f1f3f5',
+      '#f0f4ff',
+      '#e4e7ee',
+      '#c9ccd3',
+      '#9497a0',
+      '#858892',
+      '#7c808d',
+      '#6a6e7b',
+      '#5d626f',
+      '#4e5465',
     ],
   },
 }

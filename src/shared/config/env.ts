@@ -1,5 +1,4 @@
-export const ENV = {
-} as const
+export const ENV = {} as const
 
 const requiredEnvVariables: (keyof typeof ENV)[] = []
 
